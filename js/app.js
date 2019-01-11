@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded'), () => {
-  const newItemform = document.querySelector('new-item-form');
+  const newItemform = document.querySelector('#new-item-form');
   newItemform.addEventListener('submit', handleNewItemFormSubmit);
 
   const deleteAllButton = document.querySelector('#delete-all');
@@ -10,7 +10,7 @@ const handleNewItemFormSubmit = function (event) {
   event.preventDefault();
 
   const horseListItem = createHorseListItem(event.target);
-  const horseListe = document.querySelector('#horse-list');
+  const horseListe = document.querySelector('#horse-riding-list');
   horseListe.appendChild(horseListItem);
 
   event.target.reset();
@@ -18,7 +18,7 @@ const handleNewItemFormSubmit = function (event) {
 
 const createHorseListItem = function (form) {
   const horseListItem = document.createElement('li');
-  horseListItem.classList.add('horse-list-item');
+  horseListItem.classList.add('horse-riding-list-item');
 
   const name = document.createElement('h2');
   name.textContent = form.name.value;
@@ -38,5 +38,7 @@ const createHorseListItem = function (form) {
   return horseListItem;
 }
 
-
-};
+const handleDeleteAllClick = function () {
+  const horseList = document.querySelector(`#horse-riding-list`);
+  horseList.innerHTML = '';
+}

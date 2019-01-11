@@ -25,13 +25,13 @@ button, input[type="submit"] {
   margin-top: 1rem;
 }
 
-#reading-list {
+#horse-riding-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.reading-list-item {
+.horse-riding-list-item {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid #20437c;
