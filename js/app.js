@@ -24,11 +24,11 @@ const createReadingListItem = function (form) {
   name.textContent = form.name.value;
   horseRidingListItem.appendChild(name);
 
-  const breed = document.createElement('h2');
+  const breed = document.createElement('h3');
   breed.textContent = form.breed.value;
   horseRidingListItem.appendChild(breed);
 
-  const stable = document.createElement('h2');
+  const stable = document.createElement('p');
   stable.textContent = form.stable.value;
   horseRidingListItem.appendChild(stable);
 

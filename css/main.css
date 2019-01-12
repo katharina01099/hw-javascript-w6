@@ -2,6 +2,8 @@ body {
   font-family: Palatino;
 }
 
+
+
 #form-wrapper {
   width: 100%;
   display: flex;
@@ -25,6 +27,29 @@ button, input[type="submit"] {
   margin-top: 1rem;
 }
 
+h1 {
+  font-weight: bold;
+  color: #4DA1A9;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #4DA1A9;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: bold;
+  color: #4DA1A9;
+  font-size: 18px;
+}
+
+p {
+  color: #4DA1A9;
+  font-size: 18px;
+}
+
 #horse-riding-list {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +59,7 @@ button, input[type="submit"] {
 .horse-riding-list-item {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid #20437c;
+  border: 1px solid #2E5077;
   border-radius: 5%;
-  background: #ddeaff;
+  background: #D7E8BA;
 }
