@@ -1,44 +1,45 @@
-document.addEventListener('DOMContentLoaded'), () => {
+document.addEventListener('DOMContentLoaded', () => {
   const newItemform = document.querySelector('#new-item-form');
   newItemform.addEventListener('submit', handleNewItemFormSubmit);
 
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
-});
+})
 
 const handleNewItemFormSubmit = function (event) {
   event.preventDefault();
 
-  const horseListItem = createHorseListItem(event.target);
-  const horseListe = document.querySelector('#horse-riding-list');
-  horseListe.appendChild(horseListItem);
+  const horseRidingListItem = createReadingListItem(event.target);
+  const horseRidingList = document.querySelector('#horse-riding-list');
+  horseRidingList.appendChild(horseRidingListItem);
 
   event.target.reset();
 }
 
-const createHorseListItem = function (form) {
-  const horseListItem = document.createElement('li');
-  horseListItem.classList.add('horse-riding-list-item');
+const createReadingListItem = function (form) {
+  const horseRidingListItem = document.createElement('li');
+  horseRidingListItem.classList.add('horse-riding-list-item');
 
   const name = document.createElement('h2');
   name.textContent = form.name.value;
-  horseListItem.appendChild(name);
+  horseRidingListItem.appendChild(name);
 
   const breed = document.createElement('h2');
   breed.textContent = form.breed.value;
-  horseListItem.appendChild(breed);
+  horseRidingListItem.appendChild(breed);
 
   const stable = document.createElement('h2');
   stable.textContent = form.stable.value;
-  horseListItem.appendChild(stable);
+  horseRidingListItem.appendChild(stable);
 
-  const color = document.createElement('p');
-  color.textContent = form.color.value;
+  const colour = document.createElement('p');
+  colour.textContent = form.colour.value;
+  horseRidingListItem.appendChild(colour);
 
-  return horseListItem;
+  return horseRidingListItem;
 }
 
-const handleDeleteAllClick = function () {
-  const horseList = document.querySelector(`#horse-riding-list`);
-  horseList.innerHTML = '';
+const handleDeleteAllClick = function (event) {
+  const horseRidingList = document.querySelector('#horse-riding-list');
+  horseRidingList.innerHTML = '';
 }
