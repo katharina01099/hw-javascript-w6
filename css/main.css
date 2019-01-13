@@ -4,13 +4,12 @@ header {
 
 body {
   font-family: Palatino;
-/*  background-color: #D7E8BA; */
   background-image: -webkit-linear-gradient(left, #cb60b3 0%,#c146a1 34%,#a80077 96%);
 }
 
 
 .header {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   background: #5B3758;
   color: black;

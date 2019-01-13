@@ -36,6 +36,10 @@ const createReadingListItem = function (form) {
   colour.textContent = form.colour.value;
   horseRidingListItem.appendChild(colour);
 
+  const date = document.createElement('p');
+  date.textContent = form.date.value;
+  horseRidingListItem.appendChild(date);
+
   return horseRidingListItem;
 }
 
