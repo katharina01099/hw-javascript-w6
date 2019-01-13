@@ -1,10 +1,25 @@
+header {
+
+}
+
 body {
   font-family: Palatino;
+/*  background-color: #D7E8BA; */
+  background-image: -webkit-linear-gradient(left, #cb60b3 0%,#c146a1 34%,#a80077 96%);
 }
 
 
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #5B3758;
+  color: black;
+  font-size: 20px;
+}
+
 
 #form-wrapper {
+  padding: 40px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -12,6 +27,10 @@ body {
 
 .form-item {
   margin-right: 1.8rem;
+}
+
+.Button {
+  padding: 40px;
 }
 
 label.primary {
@@ -31,6 +50,7 @@ h1 {
   font-weight: bold;
   color: #4DA1A9;
   font-size: 32px;
+  padding: 40px;
 }
 
 h2 {
@@ -54,6 +74,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  padding: 40px;
 }
 
 .horse-riding-list-item {
@@ -61,5 +82,5 @@ p {
   padding: 0.5rem 0.8rem;
   border: 1px solid #2E5077;
   border-radius: 5%;
-  background: #D7E8BA;
+  background: #5B3758;
 }
